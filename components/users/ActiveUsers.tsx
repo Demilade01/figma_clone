@@ -14,7 +14,7 @@ const ActiveUsers = () => {
       <div className="flex items-center justify-center gap-1 py-2">
         <div className="flex pl-3">
           {currentUser && (
-            <Avatar name="You" otherStyles="border-[3px] " />
+            <Avatar name="You" otherStyles="border-[3px] border-primary-green" />
           )}
 
           {users.slice(0, 2).map(({ connectionId }) => {
@@ -23,7 +23,7 @@ const ActiveUsers = () => {
             );
           })}
 
-          {hasMoreUsers && <div className={styles.more}>+{users.length - 3}</div>}
+          {hasMoreUsers && <div className={styles.more}>+{users.length - 2}</div>}
         </div>
       </div>
     )
